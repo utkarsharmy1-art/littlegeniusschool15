@@ -1,6 +1,5 @@
 export const SCHOOL = {
   name: "Little Genius International School",
-  altName: "Little Genius English High School",
   short: "Little Genius",
   tagline: "Where curiosity comes to class",
   addressLines: [
@@ -13,10 +12,10 @@ export const SCHOOL = {
   mapsLink: "https://maps.app.goo.gl/HVTdgubxpkWcaX996",
   mapEmbed:
     "https://www.google.com/maps?q=Little+Genius+International+School+Poonam+Sagar+Complex+Mira+Road+East+Mira+Bhayandar+Maharashtra+401107&output=embed",
-  phone: "+91 98200 00000",
-  phoneHref: "tel:+919820000000",
-  email: "admissions@littlegenius.edu.in",
-  hours: "Monday – Saturday · 8:00 am – 4:00 pm",
+  phone: "96998 92032 / 74002 00817",
+  phoneHref: "tel:+919699892032",
+  email: "littlegeniusschool15@gmail.com",
+  hours: "Monday – Saturday · 8:00 am – 2:00 pm",
 } as const;
 
 export const NAV = [
