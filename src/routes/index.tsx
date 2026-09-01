@@ -14,7 +14,6 @@ import {
 import classroom from "@/assets/classroom.jpg";
 import heroCampus from "@/assets/hero-campus.jpg";
 import library from "@/assets/library.jpg";
-import scienceLab from "@/assets/science-lab.jpg";
 import sports from "@/assets/sports.jpg";
 import { Counter, Reveal } from "@/components/Reveal";
 import { SCHOOL } from "@/lib/school";
