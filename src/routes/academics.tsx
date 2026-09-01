@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import scienceLab from "@/assets/science-lab.jpg";
+import classroom from "@/assets/classroom.jpg";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 
@@ -11,12 +11,12 @@ export const Route = createFileRoute("/academics")({
       {
         name: "description",
         content:
-          "Pre-primary to senior school at Little Genius, Mira Road East — curriculum stages, subjects, activities and assessment approach.",
+          "Pre-primary classes at Little Genius, Mira Road East — playgroup, nursery, junior and senior KG with activity-based learning.",
       },
       { property: "og:title", content: "Academics at Little Genius International School" },
       {
         property: "og:description",
-        content: "Our stage-by-stage curriculum from playgroup to senior school.",
+        content: "Our early-years curriculum from playgroup to senior KG.",
       },
     ],
   }),
@@ -25,37 +25,37 @@ export const Route = createFileRoute("/academics")({
 
 const stages = [
   {
-    stage: "Pre-Primary",
-    classes: "Playgroup · Nursery · Jr. & Sr. KG",
-    text: "Phonics, numbers, rhymes and free play. Toilet-trained routines, nap corners and lots of storytelling.",
-    highlights: ["Phonics & pre-writing", "Show & tell", "Rhythm and rhymes"],
+    stage: "Playgroup",
+    classes: "2.5 – 3 years",
+    text: "A gentle introduction to school through songs, stories, free play and sensory activities.",
+    highlights: ["Rhymes & music", "Indoor play", "Motor-skill toys"],
   },
   {
-    stage: "Primary",
-    classes: "Std I – V",
-    text: "English, Hindi, Marathi, Maths, EVS and computers with worksheet-based practice and weekly activity periods.",
-    highlights: ["Reading fluency", "Mental maths drills", "Art & craft period"],
+    stage: "Nursery",
+    classes: "3 – 4 years",
+    text: "Children explore letters, numbers, colours and shapes through play-based, age-appropriate activities.",
+    highlights: ["Phonics readiness", "Pre-writing strokes", "Story time"],
   },
   {
-    stage: "Middle School",
-    classes: "Std VI – VIII",
-    text: "Science splits into physics, chemistry and biology basics; history, geography and civics build context.",
-    highlights: ["Lab experiments", "Project work", "Olympiad coaching"],
+    stage: "Junior KG",
+    classes: "4 – 5 years",
+    text: "A structured yet joyful day with phonics, counting, conversation practice and creative expression.",
+    highlights: ["Letter & sound blending", "Number concepts", "Art & craft"],
   },
   {
-    stage: "Senior School",
-    classes: "Std IX – X",
-    text: "Board-focused preparation with regular unit tests, doubt-clearing sessions and career guidance talks.",
-    highlights: ["Board practice papers", "Extra doubt sessions", "Career counselling"],
+    stage: "Senior KG",
+    classes: "5 – 6 years",
+    text: "Building reading fluency, writing confidence and social skills to make the move to primary school easy.",
+    highlights: ["Reading fluency", "Simple sentences", "Show & tell"],
   },
 ];
 
 function Academics() {
   return (
     <>
-      <PageHero eyebrow="Academics" title="One continuous journey, four careful stages">
-        Every stage is designed to hand the next one a confident reader, a clear thinker and a
-        curious child.
+      <PageHero eyebrow="Academics" title="Four playful years that build school readiness">
+        Every stage is designed to hand primary school a confident speaker, a curious learner and a
+        happy child.
       </PageHero>
 
       <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
@@ -91,8 +91,8 @@ function Academics() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
           <Reveal>
             <img
-              src={scienceLab}
-              alt="Students conducting an experiment in the Little Genius science lab"
+              src={classroom}
+              alt="Children learning through activities in a Little Genius classroom"
               width={1200}
               height={900}
               loading="lazy"
@@ -100,14 +100,14 @@ function Academics() {
             />
           </Reveal>
           <Reveal delay={110}>
-            <p className="eyebrow text-gold">Beyond the syllabus</p>
+            <p className="eyebrow text-gold">Beyond the classroom</p>
             <h2 className="mt-3 text-3xl leading-tight md:text-4xl">
-              Labs, stages and grounds are part of the timetable
+              Play, music and movement are part of the timetable
             </h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              Science practicals, computer periods, sports slots, elocution, drawing competitions and
-              annual day rehearsals are scheduled — not squeezed in. Inter-house activities run
-              through the year so every child finds something they are good at.
+              Music, dance, outdoor play, art and annual day rehearsals are scheduled — not squeezed
+              in. Celebration days and theme weeks run through the year so every child finds something
+              they love.
             </p>
             <Link
               to="/admissions"

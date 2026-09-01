@@ -12,7 +12,7 @@ export const Route = createFileRoute("/admissions")({
       {
         name: "description",
         content:
-          "Admission process, documents and age criteria for Little Genius International School & English High School, Mira Road East, Mira Bhayandar.",
+          "Admission process, documents and age criteria for Little Genius International School pre-primary classes, Mira Road East, Mira Bhayandar.",
       },
       { property: "og:title", content: "Admissions at Little Genius International School" },
       {
@@ -49,8 +49,6 @@ const steps = [
 
 const documents = [
   "Birth certificate (original + copy)",
-  "Previous school leaving certificate, if applicable",
-  "Last year's report card",
   "Aadhaar card of the child and parents",
   "4 passport-size photographs",
   "Residence proof",
@@ -61,7 +59,6 @@ const ages = [
   { cls: "Nursery", age: "3 – 4 years" },
   { cls: "Jr. KG", age: "4 – 5 years" },
   { cls: "Sr. KG", age: "5 – 6 years" },
-  { cls: "Std I", age: "6+ years" },
 ];
 
 function Admissions() {

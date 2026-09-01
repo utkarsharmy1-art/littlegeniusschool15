@@ -13,12 +13,12 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Our story, vision and values — how Little Genius International School & English High School teaches children in Mira Road East, Mira Bhayandar.",
+          "Our story, vision and values — how Little Genius International School nurtures pre-primary children in Mira Road East, Mira Bhayandar.",
       },
       { property: "og:title", content: "About Little Genius International School" },
       {
         property: "og:description",
-        content: "Vision, values and the people behind our Mira Road East campus.",
+        content: "Vision, values and the people behind our Mira Road East pre-primary campus.",
       },
     ],
   }),
@@ -47,8 +47,8 @@ function About() {
   return (
     <>
       <PageHero eyebrow="About us" title="A school built on patience, play and pride">
-        {SCHOOL.name} and {SCHOOL.altName} share one campus in Poonam Sagar Complex — and one
-        belief: every child deserves a teacher who notices them.
+        {SCHOOL.name} is a pre-primary campus in Poonam Sagar Complex — built on one belief: every
+        child deserves a teacher who notices them.
       </PageHero>
 
       <section className="mx-auto max-w-6xl px-5 py-16 md:py-24">
@@ -56,15 +56,16 @@ function About() {
           <Reveal>
             <p className="eyebrow text-gold">Our story</p>
             <h2 className="mt-3 text-3xl leading-tight md:text-4xl">
-              From a few classrooms to a neighbourhood institution
+              From a few classrooms to a neighbourhood favourite
             </h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               Little Genius began with a small group of pre-primary classrooms serving families in
-              Mira Road East. As those first students grew, so did the school — adding primary,
-              middle and senior sections, an English high school wing, science labs and a library.
+              Mira Road East. Over the last 10+ years, those first classrooms have grown into a
+              trusted, joyful campus for playgroup to senior kindergarten — complete with a reading
+              corner, activity room, play area and caring teachers.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Today siblings, cousins and even the children of former students sit in our classrooms.
+              Today siblings, cousins and even the children of former students walk through our doors.
               That continuity is the thing we are proudest of.
             </p>
           </Reveal>

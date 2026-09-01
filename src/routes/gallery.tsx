@@ -3,7 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import classroom from "@/assets/classroom.jpg";
 import heroCampus from "@/assets/hero-campus.jpg";
 import library from "@/assets/library.jpg";
-import scienceLab from "@/assets/science-lab.jpg";
 import sports from "@/assets/sports.jpg";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
@@ -31,7 +30,7 @@ export const Route = createFileRoute("/gallery")({
 const photos = [
   { src: heroCampus, alt: "Students arriving at the school gate in the morning", span: true },
   { src: classroom, alt: "Children raising hands in a lively classroom" },
-  { src: scienceLab, alt: "Senior students using a microscope in the science lab" },
+  { src: classroom, alt: "Children busy with art and craft activities" },
   { src: library, alt: "Students reading at long wooden tables in the library" },
   { src: sports, alt: "Children running on the sports ground", span: true },
 ];
