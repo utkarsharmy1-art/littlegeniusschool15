@@ -24,8 +24,9 @@ export const Route = createFileRoute("/gallery")({
       },
     ],
   }),
-  component: Gallery;
+  component: Gallery,
 });
+
 
 const photos = [
   { src: heroCampus, alt: "Students arriving at the school gate in the morning", span: true },
