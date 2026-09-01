@@ -11,8 +11,8 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-2xl font-semibold">{SCHOOL.name}</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/70">
-            A joyful, disciplined campus in Mira Road East nurturing children from pre-primary to
-            senior school.
+            A joyful, disciplined pre-primary campus in Mira Road East nurturing children from
+            playgroup to senior KG.
           </p>
         </div>
 
