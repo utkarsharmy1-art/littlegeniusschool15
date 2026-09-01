@@ -50,7 +50,7 @@ function Gallery() {
             <Reveal
               key={p.alt}
               delay={i * 80}
-              className={p.span ? "sm:col-span-2 lg:col-span-2" : undefined}
+              className={p.span ? "sm:col-span-2 lg:col-span-2" : ""}
             >
               <figure className="group h-full overflow-hidden rounded-2xl shadow-soft">
                 <img
