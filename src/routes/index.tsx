@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Little Genius International School & English High School in Poonam Sagar Complex, Mira Road East — pre-primary to senior school with labs, library, sports and caring teachers.",
+          "Little Genius International School in Poonam Sagar Complex, Mira Road East — a joyful pre-primary school with caring teachers, activity-based learning and safe classrooms.",
       },
       {
         property: "og:title",
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "A joyful K-12 campus in Mira Bhayandar. Explore academics, facilities, campus life and admissions.",
+          "A joyful pre-primary school in Mira Bhayandar. Explore academics, facilities, campus life and admissions.",
       },
     ],
   }),
@@ -45,41 +45,41 @@ export const Route = createFileRoute("/")({
 });
 
 const marquee = [
-  "Pre-Primary",
-  "Primary",
-  "Middle School",
-  "Senior School",
-  "Science Labs",
-  "Library",
-  "Sports",
+  "Playgroup",
+  "Nursery",
+  "Jr. KG",
+  "Sr. KG",
+  "Activity-Based Learning",
+  "Reading Corner",
+  "Sports & Games",
   "Music & Dance",
-  "Art Studio",
+  "Art & Craft",
   "Smart Classrooms",
 ];
 
 const facilities = [
   {
-    icon: FlaskConical,
-    title: "Science & Computer Labs",
-    text: "Hands-on experiments and coding basics from middle school onward.",
-  },
-  {
     icon: BookOpen,
-    title: "Reading Library",
-    text: "Story hours, reference sections and a quiet reading corner.",
+    title: "Reading & Story Corner",
+    text: "Daily story hours, picture books and a cozy space to fall in love with reading.",
   },
   {
     icon: Trophy,
     title: "Sports & Games",
-    text: "Cricket, football, kho-kho, chess and inter-house tournaments.",
+    text: "Age-appropriate outdoor play, races, ball games and fun yoga sessions.",
   },
   {
     icon: Music,
     title: "Music & Dance",
-    text: "Annual day, choir practice and classical dance training.",
+    text: "Rhymes, action songs, folk dance and confidence-building stage performances.",
   },
-  { icon: Palette, title: "Art & Craft", text: "Drawing, clay work and craft exhibitions." },
+  { icon: Palette, title: "Art & Craft", text: "Drawing, colouring, clay work and craft exhibitions." },
   { icon: Bus, title: "Safe Transport", text: "Escorted school buses across Mira Bhayandar." },
+  {
+    icon: FlaskConical,
+    title: "Discovery Activities",
+    text: "Simple experiments, sensory play and hands-on exploration to spark curiosity.",
+  },
 ];
 
 function Home() {
@@ -116,8 +116,8 @@ function Home() {
             className="animate-rise mt-5 max-w-xl text-base leading-relaxed text-cream/80 md:text-lg"
             style={{ animationDelay: "230ms" }}
           >
-            {SCHOOL.name} &amp; {SCHOOL.altName} in Poonam Sagar Complex, Mira Road East — a warm,
-            English-medium campus guiding children from playgroup to senior school.
+            {SCHOOL.name} in Poonam Sagar Complex, Mira Road East — a warm, English-medium pre-primary
+            campus guiding children from playgroup to senior kindergarten.
           </p>
 
           <div
@@ -141,9 +141,9 @@ function Home() {
 
           <dl className="animate-rise mt-14 grid max-w-2xl grid-cols-3 gap-4 border-t border-cream/15 pt-7">
             {[
-              { value: 1200, suffix: "+", label: "Happy students" },
-              { value: 60, suffix: "+", label: "Teachers & staff" },
-              { value: 20, suffix: " yrs", label: "In the neighbourhood" },
+              { value: 850, suffix: "+", label: "Happy students" },
+              { value: 15, suffix: "+", label: "Teachers & staff" },
+              { value: 10, suffix: "+ yrs", label: "In the neighbourhood" },
             ].map((s) => (
               <div key={s.label}>
                 <dt className="font-display text-3xl font-semibold text-gold md:text-4xl">
@@ -178,13 +178,13 @@ function Home() {
               A neighbourhood school with big-hearted teaching
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              For two decades, families across Mira Road East have trusted Little Genius with their
+              For over a decade, families across Mira Road East have trusted Little Genius with their
               children's first classrooms, first friendships and first stage performances. Small
               class groups, patient teachers and a values-first culture keep learning joyful.
             </p>
             <ul className="mt-6 space-y-3">
               {[
-                "English medium with strong Hindi & Marathi foundations",
+                "English medium with strong Hindi & Marathi exposure",
                 "Activity-based learning and regular parent-teacher meets",
                 "CCTV-monitored, fully safe ground-floor campus",
               ].map((point) => (
@@ -255,7 +255,7 @@ function Home() {
         </Reveal>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {[
-            { src: scienceLab, alt: "Senior students working with a microscope in the science lab" },
+            { src: classroom, alt: "Children busy with activities in a Little Genius classroom" },
             { src: library, alt: "Children reading books in the school library" },
             { src: sports, alt: "Students running on the school sports ground" },
           ].map((img, i) => (
