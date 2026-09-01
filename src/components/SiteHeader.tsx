@@ -2,22 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
+import { Logo } from "@/components/Logo";
 import { NAV, SCHOOL } from "@/lib/school";
 import { cn } from "@/lib/utils";
-
-function Crest({ className }: { className?: string }) {
-  return (
-    <span
-      className={cn(
-        "grid size-10 place-items-center rounded-xl bg-navy font-display text-lg font-semibold text-gold shadow-soft",
-        className,
-      )}
-      aria-hidden="true"
-    >
-      LG
-    </span>
-  );
-}
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,7 +28,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <Crest />
+          <Logo />
           <span className="leading-tight">
             <span className="block font-display text-[15px] font-semibold">{SCHOOL.short}</span>
             <span className="block text-[9px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">

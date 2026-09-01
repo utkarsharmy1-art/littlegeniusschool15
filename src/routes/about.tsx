@@ -60,7 +60,7 @@ function About() {
             </h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               Little Genius began with a small group of pre-primary classrooms serving families in
-              Mira Road East. Over the last 10+ years, those first classrooms have grown into a
+              Mira Road East in May 2014. Over the last 10+ years, those first classrooms have grown into a
               trusted, joyful campus for playgroup to senior kindergarten — complete with a reading
               corner, activity room, play area and caring teachers.
             </p>
@@ -112,7 +112,7 @@ function About() {
               answers.”
             </p>
             <footer className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              The Principal · {SCHOOL.short}
+              {SCHOOL.chairman} · Chairman, {SCHOOL.short}
             </footer>
           </blockquote>
         </Reveal>
