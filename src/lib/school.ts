@@ -3,15 +3,15 @@ export const SCHOOL = {
   short: "Little Genius",
   tagline: "Where curiosity comes to class",
   addressLines: [
-    "B Ground Floor, Satsang 1 Building, Wing A",
+    "Ground Floor, Satsang Building",
     "Poonam Sagar Complex, Mira Road East",
-    "Mira Bhayandar, Maharashtra 401107",
+    "Thane-401107",
   ],
   addressOneLine:
-    "B Ground Floor, Satsang 1 Building, Wing A, Poonam Sagar Complex, Mira Road East, Mira Bhayandar, Maharashtra 401107",
+    "Ground Floor, Satsang Building, Poonam Sagar Complex, Mira Road East, Thane-401107",
   mapsLink: "https://maps.app.goo.gl/HVTdgubxpkWcaX996",
   mapEmbed:
-    "https://www.google.com/maps?q=Little+Genius+International+School+Poonam+Sagar+Complex+Mira+Road+East+Mira+Bhayandar+Maharashtra+401107&output=embed",
+    "https://www.google.com/maps?q=Ground+Floor+Satsang+Building+Poonam+Sagar+Complex+Mira+Road+East+Thane+401107&output=embed",
   phone: "96998 92032 / 74002 00817",
   phoneHref: "tel:+919699892032",
   email: "littlegeniusschool15@gmail.com",
