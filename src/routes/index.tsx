@@ -16,6 +16,7 @@ import heroCampus from "@/assets/hero-campus.jpg";
 import library from "@/assets/library.jpg";
 import sports from "@/assets/sports.jpg";
 import { Counter, Reveal } from "@/components/Reveal";
+import { BLOG_POSTS } from "@/lib/blog";
 import { SCHOOL } from "@/lib/school";
 
 export const Route = createFileRoute("/")({
