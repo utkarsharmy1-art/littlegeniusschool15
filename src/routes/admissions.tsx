@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileText, PhoneCall, School, UserCheck } from "lucide-react";
 
+import { EnquiryForm } from "@/components/EnquiryForm";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SCHOOL } from "@/lib/school";
@@ -128,7 +129,25 @@ function Admissions() {
         </div>
       </section>
 
+      <section className="bg-muted/40 py-16 md:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <Reveal>
+            <p className="eyebrow text-gold">Enquiry form</p>
+            <h2 className="mt-3 text-3xl leading-tight md:text-4xl">Send an admission enquiry</h2>
+            <p className="mt-3 text-muted-foreground">
+              Fill in the details and send them straight to the admission desk on WhatsApp or email.
+            </p>
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="mt-8">
+              <EnquiryForm />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden bg-navy-deep py-16 text-cream md:py-20">
+
         <div className="pointer-events-none absolute -left-16 -top-20 size-72 rounded-full bg-gold/20 blur-3xl animate-blob" />
         <div className="relative mx-auto max-w-3xl px-5 text-center">
           <Reveal>
