@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileText, PhoneCall, School, UserCheck } from "lucide-react";
 
+import { EnquiryForm } from "@/components/EnquiryForm";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SCHOOL } from "@/lib/school";
