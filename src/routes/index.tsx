@@ -16,6 +16,7 @@ import heroCampus from "@/assets/hero-campus.jpg";
 import library from "@/assets/library.jpg";
 import sports from "@/assets/sports.jpg";
 import { Counter, Reveal } from "@/components/Reveal";
+import { BLOG_POSTS } from "@/lib/blog";
 import { SCHOOL } from "@/lib/school";
 
 export const Route = createFileRoute("/")({
@@ -282,6 +283,56 @@ function Home() {
           </Link>
         </Reveal>
       </section>
+
+      {/* BLOG PEEK */}
+      <section className="bg-secondary/60 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-5">
+          <Reveal>
+            <p className="eyebrow text-gold">From the blog</p>
+            <h2 className="mt-3 text-3xl leading-tight md:text-4xl">
+              Events, teachers and parenting notes
+            </h2>
+          </Reveal>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {BLOG_POSTS.slice(0, 3).map((post, i) => (
+              <Reveal key={post.slug} delay={i * 80}>
+                <Link
+                  to="/blog/$slug"
+                  params={{ slug: post.slug }}
+                  className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-transform hover:-translate-y-1"
+                >
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt}
+                    width={1200}
+                    height={900}
+                    loading="lazy"
+                    className="aspect-4/3 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="flex flex-1 flex-col p-5">
+                    <span className="text-xs font-bold text-gold">{post.category}</span>
+                    <h3 className="mt-2 text-lg leading-snug">{post.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {post.excerpt}
+                    </p>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
+          <Reveal delay={120}>
+            <Link
+              to="/blog"
+              className="group mt-8 inline-flex items-center gap-2 text-sm font-bold text-navy"
+            >
+              Read all stories
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-navy-deep py-16 text-cream md:py-20">
