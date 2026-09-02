@@ -76,7 +76,7 @@ export function EnquiryForm() {
             onChange={(e) => set("name", e.target.value)}
             placeholder="Your full name"
           />
-          {errors.name && <span className="text-xs text-destructive">{errors.name}</span>}
+          {errors['name'] && <span className="text-xs text-destructive">{errors['name']}</span>}
         </label>
         <label className="block text-sm">
           <span className="font-semibold">Child's name</span>
@@ -87,7 +87,7 @@ export function EnquiryForm() {
             onChange={(e) => set("child", e.target.value)}
             placeholder="Child's full name"
           />
-          {errors.child && <span className="text-xs text-destructive">{errors.child}</span>}
+          {errors['child'] && <span className="text-xs text-destructive">{errors['child']}</span>}
         </label>
         <label className="block text-sm">
           <span className="font-semibold">Class</span>
@@ -99,7 +99,7 @@ export function EnquiryForm() {
               </option>
             ))}
           </select>
-          {errors.cls && <span className="text-xs text-destructive">{errors.cls}</span>}
+          {errors['cls'] && <span className="text-xs text-destructive">{errors['cls']}</span>}
         </label>
         <label className="block text-sm">
           <span className="font-semibold">Phone</span>
@@ -111,7 +111,7 @@ export function EnquiryForm() {
             onChange={(e) => set("phone", e.target.value)}
             placeholder="10-digit mobile number"
           />
-          {errors.phone && <span className="text-xs text-destructive">{errors.phone}</span>}
+          {errors['phone'] && <span className="text-xs text-destructive">{errors['phone']}</span>}
         </label>
         <label className="block text-sm md:col-span-2">
           <span className="font-semibold">Message (optional)</span>
